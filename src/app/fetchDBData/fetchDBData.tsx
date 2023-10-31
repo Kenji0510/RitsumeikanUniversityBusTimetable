@@ -2,8 +2,8 @@ import '../globals.css'
 
 
 export default async function FetchDBData({destination}: {destination: string}) {
-    const apiUrl: string = "http://192.168.0.25:5000/busTimeApi/";
-    //const apiUrl: string = "https://kapikapi0510.info/busTimeApi/";
+    //const apiUrl: string = "http://192.168.0.25:5000/busTimeApi/";
+    const apiUrl: string = "https://kapikapi0510.info/busTimeApi/";
     //const res = await fetch(apiUrl + destination, { cache: "no-cache" });
     const res = await fetch(apiUrl + destination);
     const data = await res.json();
